@@ -1,0 +1,59 @@
+/* 1. Style the entire web page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #EDEDED;
+}
+
+/* 2. Style all headings */
+h1, h2, h3, h4, h5, h6 {
+    color: blue;
+    border-bottom: 1px solid #929CA4;
+}
+
+/* 3. First letter of the first paragraph */
+p:first-of-type::first-letter {
+    font-size: 30px;
+}
+
+/* 4. Features class */
+.features {
+    color: #CC1C0D;
+    font-weight: bold;
+}
+
+/* 5. Testimonials using multiple selector */
+#testimonial1, #testimonial2 {
+    font-style: italic;
+    margin-left: 50px;
+}
+
+/* 6. Attribute selector + pseudo classes for link */
+a[href] {
+    text-decoration: none;
+}
+
+a[href]:link {
+    color: green;
+}
+
+a[href]:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 7. Remove bullets from management list */
+ul {
+    list-style-type: none;
+}
+
+/* 8. First item in management list */
+ul li:first-child {
+    color: blue;
+}
+
+/* 9. Last item in management list */
+ul li:last-child {
+    color: red;
+}
